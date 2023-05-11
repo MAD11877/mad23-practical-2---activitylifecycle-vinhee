@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practical2</string>
+    <string name="btn1">Follow</string>
+    <string name="btn2">Message</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_message_group">MessageGroup</string>
+</resources>

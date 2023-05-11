@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean following = false;
     private Button followButton;
 
+    TextView Username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
         followButton.setOnClickListener(view -> {
             if(following != false){ //checking if boolean is false or not, if it's true, button will change text
                 followButton.setText("Unfollow");
+                Toast.makeText(MainActivity.this, "Followed", Toast.LENGTH_LONG).show(); //Pop up message triggered when button has been clicked
             }
             else { //if boolean is false, button will change text
                 followButton.setText("Follow");
+                Toast.makeText(MainActivity.this, "Unfollowed", Toast.LENGTH_LONG).show();
             }
-
             following = !following; //boolean following will change to the opp (true --> false vice versa)
         });
 
